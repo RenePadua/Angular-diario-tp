@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Roboto:wght@300&display=swap');
+
+
+nav {
+  background-color: #568ff6;
+  transition: all 0.5s;
+}
+
+.offcanvas-body{
+padding-top: 5%;
+}
+
+.offcanvas, a {
+  color: #fff;
+  background-color: #568ff6;
+  text-decoration-line: none;
+}
+
+.navbar-toggler-icon {
+color-adjust: #ff;
+}
+
+
+#logo {
+  padding: 40px 0;
+}
+
+.logo {
+  color: #568ff6;
+  font-size: 27px;
+  margin-right: 10px;
+}
+
+i {
+  color: #fff;
+  margin: 0 10px 0 0;
+}
+
+#title{
+  font-size: .8em;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 20px;
+}
+
+
+/* HORÁRIO */
+
+.horario {
+  float: right;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.hora {
+  font-family: 'Orbitron', Arial, Helvetica, sans-serif;
+  
+}
+
+img{
+  width: 36px;   
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  div.col {
+    margin: auto;
+    width: 100%;
+    padding: 0 0 0 0;
+    text-align: center;
+  }
+

@@ -1,0 +1,77 @@
+<nav class="navbar navbar-dark bg-#568ff6">
+  <div class="container-fluid">
+    <!-- Botão Puxa opções -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <span class="navbar-brand">Self Care App</span>
+
+    <!-- Relógio  -->
+    <i class="far fa-clock horario">
+      <span class="hora"> {{ date }} </span>
+    </i>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          <i class="fas fa-book-open"></i>
+          Self Care App
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="offcanvas-body">
+        <ul class="navbar-nav">
+          <li>
+            <i class="fas fa-user"></i>
+            <a [routerLink]="['/usuario']"> Usuário </a>
+          </li>
+          <li>
+            <i class="fas fa-solid fa-calendar-check"></i>
+            <a [routerLink]="['/tarefa']"> Tarefa </a>
+          </li>
+          <li>
+            <i class="fas fa-solid fa-book"></i>
+            <a [routerLink]="['/diario']"> Diário </a>
+          </li>
+
+          <li>
+            <i class="fas fa-users"></i>
+            <a [routerLink]="['/integrantes']"> Integrantes </a>
+          </li>
+
+          <li>
+            <i class="fa fa-window-close"></i>
+            <a [routerLink]="['/']"> Sair </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container text-center">
+    <div class="col">
+      <i class="fas fa-solid fa-book"></i>
+    </div>
+    <div class="col">
+      <i class="fas fa-solid fa-calendar-check"></i>
+    </div>
+  </div>
+</nav>
